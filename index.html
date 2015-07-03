@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BidWin Option</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="public/styles/libs.min.css">
+  <!--<link rel="stylesheet" href="public/styles/styles.min.css">-->
+  <link rel="stylesheet" href="public/styles/styles.css">
+</head>
+<body>
+<nav id="nav">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h1 class="logo">
+          <a href="">BidWin Option</a>
+        </h1>
+        <ul class="list-unstyled main-nav clearfix">
+          <li class="active"><a href="">Home page</a></li>
+          <li><a href="">Dashboard</a></li>
+          <li><a href="">Trade History</a></li>
+        </ul>
+        <div class="user-options">
+          <img class="user" src="public/images/user.png" alt=""/>
+          <button type="button" class="btn bwo-btn bwo-btn-empty dropdown-toggle" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+            Karina Romaine <i class="fa fa-chevron-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Option</a></li>
+            <li><a href="#">Option</a></li>
+            <li><a href="#">Option</a></li>
+            <li><a href="#">Option</a></li>
+          </ul>
+        </div>
+        <div class="lang-selector">
+          <button type="button" class="btn bwo-btn bwo-btn-empty dropdown-toggle" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+            <span>Language</span><span>ENG</span> <i class="fa fa-chevron-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">English</a></li>
+            <li><a href="#">Spanish</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<section id="top-controls">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <ul class="list-unstyled type-selector clearfix">
+          <li><a href="" class="btn bwo-btn active">high low</a></li>
+          <li><a href="" class="btn bwo-btn">above below</a></li>
+          <li><a href="" class="btn bwo-btn">range</a></li>
+        </ul>
+        <div class="top-data">
+          <p>Balance</p>
+          <span class="badge">USD</span> <strong>$1,000,745.05</strong>
+        </div>
+        <div class="top-data">
+          <p>Maximum Withdrawal Amount</p>
+          <span class="badge">USD</span> <strong>$1,000,745.05</strong>
+        </div>
+        <div class="view-selector">
+          <span>View:</span>
+
+          <div class="btn-group" role="group" aria-label="">
+            <button type="button" class="btn bwo-btn"><i class="fa fa-bars"></i></button>
+            <button type="button" class="btn bwo-btn active"><i class="fa fa-square-o"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="graph" class="box-margin">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="box">
+          <div class="steps clearfix">
+            <div class="step">
+              <span>Asset:</span>
+
+              <div class="select-wrapper">
+
+                <button type="button" class="btn bwo-btn bwo-btn-3 dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                  <span>EUR/USD</span> <i class="fa fa-caret-down"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Option</a></li>
+                  <li><a href="#">Option</a></li>
+                  <li><a href="#">Option</a></li>
+                  <li><a href="#">Option</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="step">
+              <span>Investment Amount:</span>
+
+              <div class="select-wrapper">
+
+                <button type="button" class="btn bwo-btn bwo-btn-3 dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                  <span>$25</span> <i class="fa fa-caret-down"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Option</a></li>
+                  <li><a href="#">Option</a></li>
+                  <li><a href="#">Option</a></li>
+                  <li><a href="#">Option</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="step clock">
+              <div>
+                <span>Time Remaining</span>
+                <strong>00:00:30</strong>
+              </div>
+            </div>
+          </div>
+          <div class="box-content clearfix">
+            <div class="graph-wrapper">
+              <h5 class="clearfix"><img src="public/images/currencies.png" alt=""/>Will <span
+                class="badge">EUR/USD</span> close higher
+                or lower than the current price?</h5>
+
+              <div class="graph clearfix">
+                <img src="public/images/graph.png" alt=""/>
+
+                <div class="graph-meta-data clearfix">
+                  <div class="slider-wrapper-vertical">
+                    <div>
+                      <div style="height: 50%;"></div>
+                    </div>
+                    <p>Trader's Choice</p>
+                  </div>
+                  <div class="meta-buttons">
+                    <a href="" class="btn bwo-btn bwo-btn-4 green">call (66%) <i class="fa fa-caret-up"></i></a>
+                    <span class="btn bwo-btn bwo-btn-5">1.1326<sup>8</sup></span>
+                    <a href="" class="btn bwo-btn bwo-btn-4 red">put (66%) <i class="fa fa-caret-down"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="graph-sidebar">
+              <div class="top">
+                <h5>Potential Payout</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <p><span>Call</span></p>
+
+                    <p><strong>$45.50</strong></p>
+                  </li>
+                  <li>
+                    <p><span>PUT</span></p>
+
+                    <p><strong>$45.50</strong></p>
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom">
+                <p class="clearfix">Time Left <span>00:00:30</span></p>
+
+                <div class="slider-wrapper">
+                  <div>
+                    <div style="width: 50%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="table" class="box-margin">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="box">
+          <div class="box-content clearfix">
+            <div class="table-title clearfix">
+              <div class="select-wrapper">
+
+                <button type="button" class="btn bwo-btn bwo-btn-6 dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                  <span>20</span> <i class="fa fa-caret-down"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Option</a></li>
+                  <li><a href="#">Option</a></li>
+                  <li><a href="#">Option</a></li>
+                  <li><a href="#">Option</a></li>
+                </ul>
+              </div>
+              Active Order
+            </div>
+            <table class="table">
+              <thead>
+              <tr>
+                <th>Ticket ID</th>
+                <th>Asset</th>
+                <th>Investment $</th>
+                <th>Payout %</th>
+                <th>Trade</th>
+                <th>Trend</th>
+                <th>Strike Price</th>
+                <th>Current Price</th>
+                <th>Status</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>223</td>
+                <td>eur/usd</td>
+                <td>85</td>
+                <td>85</td>
+                <td>High Low</td>
+                <td>Up</td>
+                <td>1,1240<sup>2</sup></td>
+                <td>1,1240<sup>2</sup></td>
+                <td>Gain</td>
+              </tr>
+              <tr>
+                <td>223</td>
+                <td>eur/usd</td>
+                <td>85</td>
+                <td>85</td>
+                <td>High Low</td>
+                <td>Up</td>
+                <td>1,1240<sup>2</sup></td>
+                <td>1,1240<sup>2</sup></td>
+                <td>Gain</td>
+              </tr>
+              <tr>
+                <td>223</td>
+                <td>eur/usd</td>
+                <td>85</td>
+                <td>85</td>
+                <td>High Low</td>
+                <td>Up</td>
+                <td>1,1240<sup>2</sup></td>
+                <td>1,1240<sup>2</sup></td>
+                <td>Gain</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="sign-up" class="box-margin">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="box">
+          <div class="sign-up">
+            <h4>Lorem ipsum dolor sit amet</h4>
+
+            <p class="first">Aenean vitae purus vitae dolor eleifend bibendum</p>
+
+            <p class="second">etiam velit lorem, dictum eu semper in</p>
+            <a href="" class="btn bwo-btn bwo-btn-7">Sign Up Now</a>
+            <img class="bg" src="public/images/bg-sign-up.png" alt=""/>
+            <img src="public/images/logo-white.png" alt="" class="logo"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<sections id="logos" class="box-margin">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="logos-slider clearfix">
+          <div class="logo-slide">
+            <img src="public/images/brand-1.png" alt=""/>
+          </div>
+          <div class="logo-slide">
+            <img src="public/images/brand-2.png" alt=""/>
+          </div>
+          <div class="logo-slide">
+            <img src="public/images/brand-3.png" alt=""/>
+          </div>
+          <div class="logo-slide">
+            <img src="public/images/brand-4.png" alt=""/>
+          </div>
+          <div class="logo-slide">
+            <img src="public/images/brand-5.png" alt=""/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</sections>
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="top clearfix">
+          <h1 class="logo logo-small"><a href="">BidWinOption</a></h1>
+
+          <div class="social">
+            <a href="" class="social-icon fb"><i class="fa fa-facebook"></i></a>
+            <a href="" class="social-icon tw"><i class="fa fa-twitter"></i></a>
+            <a href="" class="social-icon gp"><i class="fa fa-google-plus"></i></a>
+          </div>
+        </div>
+        <div class="middle">
+          <p>EsteemTrader is a trading name of Blackwell Esteem Financials Pty Ltd (ACN 147 766 336), AFSL 400364,
+            regulated by the Australian Securities and Investments Commission ("ASIC")</p>
+        </div>
+        <div class="bottom">
+          <p><span>General risk warning:</span> trading in binary options carries a high level of risk and can result in the loss of
+            all of your investment. As such, binary options may not be appropriate for all investors. You should not
+            invest money that you cannot afford to lose. Before deciding to trade, you should become aware of all the
+            risks associated with binary options trading, and seek advice from an independent and suitably licensed
+            financial advisor. Under no circumstances shall we have any liability to any person or entity for (a) any
+            loss or damage in whole or part caused by, resulting from, or relating to any transactions related to binary
+            options or (b) any direct, indirect, special, consequential or incidental damages whatsoever. For more
+            information about the risks associated with trading binary options <a href="">click here</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="public/js/libs.min.js"></script>
+</body>
+</html>

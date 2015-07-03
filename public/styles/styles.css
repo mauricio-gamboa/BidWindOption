@@ -262,6 +262,11 @@ Navigation Styles
 #nav .lang-selector ul li a {
   text-transform: capitalize;
 }
+@media (min-width: 993px) and (max-width: 1200px) {
+  #nav .lang-selector {
+    padding-left: 0;
+  }
+}
 #nav .user-options {
   border-left: 1px solid #c4c4c4;
   padding: 0 15px;
@@ -323,6 +328,11 @@ Navigation Styles
   height: 64px;
   line-height: 64px;
   padding: 0 15px;
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .main-nav li a {
+    padding: 0 10px;
+  }
 }
 .main-nav li a:hover {
   color: #f36822;
@@ -508,8 +518,18 @@ Graph Styles
 .graph-wrapper .graph > * {
   float: left;
 }
+@media (min-width: 993px) and (max-width: 1200px) {
+  .graph-wrapper .graph > img {
+    width: 412px;
+  }
+}
 .graph-wrapper .graph .graph-meta-data {
   margin-left: 9px;
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .graph-wrapper .graph .graph-meta-data {
+    float: right;
+  }
 }
 .graph-wrapper .graph .graph-meta-data > * {
   float: left;

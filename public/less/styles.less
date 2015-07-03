@@ -383,6 +383,10 @@ Navigation Styles
         }
       }
     }
+
+    @media @medium {
+      padding-left: 0;
+    }
   }
 
   .user-options {
@@ -455,6 +459,10 @@ Navigation Styles
       height: 64px;
       line-height: 64px;
       padding: 0 15px;
+
+      @media @medium {
+        padding: 0 10px;
+      }
 
       &:hover {
         color: @orange-1;
@@ -682,8 +690,18 @@ Graph Styles
       float: left;
     }
 
+    > img {
+      @media @medium {
+        width: 412px;
+      }
+    }
+
     .graph-meta-data {
       margin-left: 9px;
+
+      @media @medium {
+        float: right;
+      }
 
       > * {
         float: left;

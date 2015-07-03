@@ -1,0 +1,1114 @@
+/***************************
+****************************
+Variables
+****************************
+***************************/
+
+@body-color: #ebebeb;
+
+@gray-1: #c4c4c4;
+@gray-2: #a3a3a3;
+@gray-3: #464646;
+@gray-4: #898989;
+@gray-5: #444242;
+@gray-6: #d3d3d3;
+@gray-7: #f4f4f4;
+@gray-8: #c7c7c7;
+@gray-9: #e0e0e0;
+@gray-10: #ededed;
+@gray-11: #c3c3c3;
+@gray-12: #fafafa;
+@gray-13: #959595;
+
+@orange-1: #f36822;
+
+@green-1: #09c948;
+
+@red-1: #ed1c24;
+
+@facebook-color: #4874b6;
+@facebook-color-hover: #3e639b;
+@twitter-color: #00aced;
+@twitter-color-hover: #0293c9;
+@google-color: #da4835;
+@google-color-hover: #bb3f2f;
+
+/***************************
+****************************
+Responsive
+****************************
+***************************/
+
+@large: ~"(min-width: 1200px)";
+@medium: ~"(min-width: 993px) and (max-width: 1200px)";
+@small: ~"(min-width: 768px) and (max-width: 992px)";
+@xs: ~"(max-width: 767px)";
+
+.show-xs,
+.show-s,
+.show-m,
+.show-xl {
+  display: none;
+}
+
+@media @medium {
+  .hide-m {
+    display: none !important;
+  }
+
+  .show-m {
+    display: block;
+  }
+}
+
+@media @small {
+  .hide-s {
+    display: none !important;
+  }
+
+  .show-s {
+    display: block;
+  }
+}
+
+@media @xs {
+  .hide-xs {
+    display: none !important;
+  }
+
+  .show-xs {
+    display: block;
+  }
+}
+
+/***************************
+****************************
+Fonts
+****************************
+***************************/
+
+@font-face {
+  font-family: 'proxima_nova_regular';
+  src: url('../fonts/proximanova-reg-webfont.eot');
+  src: url('../fonts/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanova-reg-webfont.woff') format('woff'),
+  url('../fonts/proximanova-reg-webfont.ttf') format('truetype'),
+  url('../fonts/proximanova-reg-webfont.svg#proxima_nova_rgregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_semibold';
+  src: url('../fonts/proximanova-sbold-webfont.eot');
+  src: url('../fonts/proximanova-sbold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanova-sbold-webfont.woff2') format('woff2'),
+  url('../fonts/proximanova-sbold-webfont.woff') format('woff'),
+  url('../fonts/proximanova-sbold-webfont.ttf') format('truetype'),
+  url('../fonts/proximanova-sbold-webfont.svg#proxima_novasemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_bold';
+  src: url('../fonts/proximanova-bold-webfont.eot');
+  src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanova-bold-webfont.woff2') format('woff2'),
+  url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+  url('../fonts/proximanova-bold-webfont.ttf') format('truetype'),
+  url('../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Bd';
+  src: url('../fonts/HelveticaNeueLTStd-Bd_gdi.eot');
+  src: url('../fonts/HelveticaNeueLTStd-Bd_gdi.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HelveticaNeueLTStd-Bd_gdi.woff') format('woff'),
+  url('../fonts/HelveticaNeueLTStd-Bd_gdi.ttf') format('truetype'),
+  url('../fonts/HelveticaNeueLTStd-Bd_gdi.otf') format('opentype'),
+  url('../fonts/HelveticaNeueLTStd-Bd_gdi.svg#HelveticaNeueLTStd-Bd') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Roman';
+  src: url('../fonts/HelveticaNeueLTStd-Roman_gdi.eot');
+  src: url('../fonts/HelveticaNeueLTStd-Roman_gdi.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/HelveticaNeueLTStd-Roman_gdi.woff') format('woff'),
+  url('../fonts/HelveticaNeueLTStd-Roman_gdi.ttf') format('truetype'),
+  url('../fonts/HelveticaNeueLTStd-Roman_gdi.otf') format('opentype'),
+  url('../fonts/HelveticaNeueLTStd-Roman_gdi.svg#HelveticaNeueLTStd-Roman') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA;
+}
+
+/***************************
+****************************
+Buttons and Links
+****************************
+***************************/
+
+.btn {
+  border: none;
+
+  &.bwo-btn {
+    background: url("../images/bg-btn-2.png") repeat-x 0 0;
+    box-shadow: none;
+    color: @gray-5;
+    border-radius: 4px;
+    padding: 0 12px;
+    height: 33px;
+    line-height: 33px;
+
+    &.bwo-btn-empty {
+      box-shadow: none;
+      background: none;
+      padding: 0;
+      height: auto;
+      line-height: normal;
+    }
+
+    &.bwo-btn-1,
+    &.active {
+      box-shadow: none;
+      color: white;
+      background: url("../images/bg-btn-1.png") repeat-x 0 0;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    &.bwo-btn-3 {
+      font-family: 'proxima_nova_bold';
+      font-size: 18px;
+      color: black;
+      .border(1px, @gray-8);
+      background: url("../images/bg-btn-3.png") repeat-x 0 0;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 18px;
+    }
+
+    &.bwo-btn-4 {
+      font-family: 'proxima_nova_bold';
+      font-size: 18px;
+      color: black;
+      .border(1px, @gray-8);
+      background: url("../images/bg-btn-4.png") repeat-x 0 0;
+      height: 60px;
+      line-height: 60px;
+      padding: 0 24px;
+      width: 179px;
+      text-transform: uppercase;
+      text-align: left;
+      position: relative;
+
+      i {
+        font-size: 30px;
+        position: absolute;
+        top: 0;
+        right: 24px;
+        height: 60px;
+        line-height: 60px;
+      }
+
+      &.red {
+        i {
+          color: @red-1;
+        }
+      }
+
+      &.green {
+        i {
+          color: @green-1;
+        }
+      }
+    }
+
+    &.bwo-btn-5 {
+      font-family: 'HelveticaNeueLTStd-Roman';
+      font-weight: normal;
+      background: @green-1;
+      height: 60px;
+      line-height: 60px;
+      width: 179px;
+      color: white;
+      padding: 0 24px;
+      text-align: left;
+      font-size: 28px;
+    }
+
+    &.bwo-btn-6 {
+      font-family: 'proxima_nova_bold';
+      font-size: 14px;
+      color: black;
+      .border(1px, @gray-8);
+      background: url("../images/bg-btn-6.png") repeat-x 0 0;
+      height: 32px;
+      line-height: 32px;
+      padding: 0 18px;
+    }
+
+    &.bwo-btn-7 {
+      font-family: 'proxima_nova_bold';
+      font-size: 16px;
+      color: black;
+      background: url("../images/bg-btn-7.png") repeat-x 0 0;
+      height: 42px;
+      line-height: 42px;
+      width: 145px;
+      padding: 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/***************************
+****************************
+General Styles
+****************************
+***************************/
+
+body {
+  background-color: @body-color;
+  font-family: 'proxima_nova_regular';
+}
+
+a {
+  &:hover,
+  &:active,
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  margin: 0;
+
+  a {
+    background: url("../images/logo.png") no-repeat 0 0;
+    display: inline-block;
+    height: 55px;
+    width: 245px;
+    text-indent: -9999px;
+  }
+
+  &.logo-small {
+    a {
+      background: url("../images/logo-small.png") no-repeat 0 0;
+      height: 41px;
+      width: 184px;
+    }
+  }
+}
+
+.border(@w, @c) {
+  border: @w solid @c;
+}
+
+.border-bottom(@w, @c) {
+  border-bottom: @w solid @c;
+}
+
+.border-top(@w, @c) {
+  border-top: @w solid @c;
+}
+
+.border-left(@w, @c) {
+  border-left: @w solid @c;
+}
+
+.border-right(@w, @c) {
+  border-right: @w solid @c;
+}
+
+.box-margin {
+  margin-bottom: 15px;
+}
+
+/***************************
+****************************
+Navigation Styles
+****************************
+***************************/
+
+.nav-settings {
+  padding: 0 15px;
+  height: 64px;
+  line-height: 64px;
+}
+
+#nav {
+  font-family: 'proxima_nova_bold';
+  background: url("../images/bg-nav.png") repeat-x 0 0;
+  .border-bottom(1px, @gray-1);
+  height: 64px;
+  font-size: 13px;
+
+  .logo {
+    .nav-settings;
+    padding: 0;
+    float: left;
+    margin-right: 15px;
+
+    a {
+      margin-top: 4px;
+    }
+  }
+
+  .main-nav {
+    .border-left(1px, @gray-1);
+    .border-right(1px, @gray-1);
+    float: left;
+  }
+
+  .lang-selector {
+    .nav-settings;
+    float: right;
+
+    ul {
+      li {
+        a {
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    @media @medium {
+      padding-left: 0;
+    }
+  }
+
+  .user-options {
+    .border-left(1px, @gray-1);
+    .nav-settings;
+    float: right;
+  }
+
+  .dropdown-menu {
+    font-family: 'proxima_nova_regular';
+    left: auto;
+    right: 0;
+  }
+}
+
+.lang-selector {
+  position: relative;
+
+  span {
+    color: black;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+
+    & + span {
+      background: url("../images/sep-1.png") no-repeat 0 0;
+      text-transform: uppercase;
+      color: @orange-1;
+      padding-left: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  i {
+    color: @gray-2;
+  }
+}
+
+.user-options {
+  color: black;
+  position: relative;
+
+  .user {
+    border-radius: 100%;
+    height: 45px;
+    width: 45px;
+    margin-right: 12px;
+  }
+
+  i {
+    color: @gray-2;
+  }
+}
+
+.main-nav {
+  margin: 0;
+
+  li {
+    float: left;
+    background: url("../images/sep-1.png") no-repeat 100% 50%;
+
+    &:last-child {
+      background: none;
+    }
+
+    a {
+      text-transform: uppercase;
+      display: block;
+      color: black;
+      height: 64px;
+      line-height: 64px;
+      padding: 0 15px;
+
+      @media @medium {
+        padding: 0 10px;
+      }
+
+      &:hover {
+        color: @orange-1;
+      }
+    }
+
+    &.active {
+      a {
+        color: white;
+        background: url("../images/bg-nav-active.png") repeat-x 0 0;
+      }
+    }
+  }
+}
+
+/***************************
+****************************
+Top Controls Styles
+****************************
+***************************/
+
+.top-controls-settings {
+  background: url("../images/sep-2.png") no-repeat 100% 50%;
+  padding: 0 27px;
+  float: left;
+  min-height: 34px;
+}
+
+#top-controls {
+  font-family: 'proxima_nova_bold';
+  padding: 18px 0;
+  font-size: 13px;
+
+  .type-selector {
+    .top-controls-settings;
+    padding-left: 0;
+  }
+
+  .top-data {
+    .top-controls-settings;
+  }
+
+  .view-selector {
+    float: right;
+  }
+}
+
+.type-selector {
+  margin: 0;
+
+  li {
+    float: left;
+
+    .btn {
+      background: none;
+      color: @gray-3;
+      text-transform: uppercase;
+      font-size: 13px;
+
+      &:hover {
+        color: @orange-1;
+      }
+    }
+  }
+}
+
+.top-data {
+  p {
+    font-family: 'proxima_nova_semibold';
+    margin: 0;
+    line-height: normal;
+  }
+
+  .badge {
+    background-color: @gray-4;
+    border-radius: 4px;
+    font-family: 'HelveticaNeueLTStd-Bd';
+    font-size: 11px;
+    line-height: 16px;
+    display: inline-block;
+    height: 16px;
+    padding: 0 8px;
+    float: left;
+  }
+
+  strong {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 16px;
+    display: inline-block;
+    height: 16px;
+    float: left;
+    margin-left: 5px;
+  }
+}
+
+.view-selector {
+  > span {
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .btn-group {
+    .border(1px, @gray-6);
+    border-radius: 4px;
+
+    .btn {
+
+      i {
+        vertical-align: middle;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+/***************************
+****************************
+Graph Styles
+****************************
+***************************/
+
+.box {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px -3px #000000;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.steps {
+  background-color: @gray-7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  .border(1px, @gray-9);
+
+  .step {
+    background: url("../images/arrow-1.png") no-repeat 100% 0;
+    float: left;
+    padding: 16px 33px;
+    width: 33.33%;
+    height: 74px;
+
+    &:last-child {
+      background: none;
+    }
+
+    > span {
+      font-family: 'proxima_nova_bold';
+      display: inline-block;
+      line-height: 40px;
+      font-size: 15px;
+      color: black;
+      margin-right: 15px;
+    }
+
+    .select-wrapper {
+      display: inline-block;
+    }
+
+    &.clock {
+      padding: 13px 33px;
+
+      > div {
+        background: url("../images/ico-1.png") no-repeat 0 0;
+        position: relative;
+        padding-left: 37px;
+
+        > * {
+          display: block;
+          line-height: normal;
+        }
+
+        > span {
+          font-size: 14px;
+        }
+
+        > strong {
+          font-family: 'proxima_nova_bold';
+          font-size: 28px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+.graph-wrapper {
+  padding: 14px 33px;
+  float: left;
+  width: 75%;
+
+  h5 {
+    font-family: 'proxima_nova_bold';
+    margin: 0 0 20px 0;
+    .border-bottom(1px, @body-color);
+    padding-bottom: 14px;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 29px;
+
+    > img {
+      vertical-align: middle;
+      margin-right: 11px;
+    }
+
+    .badge {
+      background-color: @gray-10;
+      border-radius: 4px;
+      line-height: 29px;
+      padding: 0 6px;
+      color: black;
+      font-size: 15px;
+      font-weight: normal;
+    }
+  }
+
+  .graph {
+    > * {
+      float: left;
+    }
+
+    > img {
+      @media @medium {
+        width: 412px;
+      }
+    }
+
+    .graph-meta-data {
+      margin-left: 9px;
+
+      @media @medium {
+        float: right;
+      }
+
+      > * {
+        float: left;
+      }
+
+      .meta-buttons {
+        margin-left: 19px;
+
+        > * {
+          display: block;
+        }
+
+        .bwo-btn-5 {
+          margin: 24px 0;
+        }
+      }
+    }
+  }
+}
+
+.slider-wrapper {
+  div {
+    border-radius: 25px;
+    height: 7px;
+  }
+
+  > div {
+    background-color: @gray-11;
+    width: 100%;
+
+    > div {
+      background-color: @green-1;
+    }
+  }
+}
+
+.slider-wrapper-vertical {
+  position: relative;
+
+  div {
+    height: 228px;
+    width: 20px;
+  }
+
+  > div {
+    background-color: @green-1;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+
+    > div {
+      background-color: @red-1;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  p {
+    color: white;
+    font-family: "proxima_nova_bold";
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    transform: rotate(270deg);
+    transform-origin: left top 0;
+    width: 228px;
+  }
+}
+
+.graph-sidebar {
+  float: left;
+  width: 25%;
+  background-color: @gray-7;
+  .border-left(1px, @gray-9);
+  height: 321px;
+  border-bottom-right-radius: 5px;
+
+  > div {
+    padding: 26px 24px;
+    color: black;
+    .border-bottom(1px, @gray-9);
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    p {
+      margin: 0;
+
+      > * {
+        font-family: 'proxima_nova_bold';
+        text-transform: uppercase;
+      }
+
+      span {
+        font-size: 15px;
+      }
+
+      strong {
+        font-size: 22px;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .top {
+    h5 {
+      font-weight: normal;
+      margin: 0 0 5px 0;
+      margin: 0 0 5px 0;
+      font-size: 14px;
+      background: url("../images/ico-2.png") no-repeat 0 0;
+      padding-left: 39px;
+      line-height: 24px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 39px;
+
+      li {
+        .border-bottom(1px, @gray-9);
+        padding-bottom: 20px;
+        margin-top: 14px;
+        line-height: normal;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          border-bottom: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    p {
+      margin-bottom: 25px;
+
+      span {
+        float: right;
+      }
+    }
+  }
+}
+
+/***************************
+****************************
+Table Styles
+****************************
+***************************/
+
+#table {
+  .table-title {
+    font-family: 'proxima_nova_bold';
+    background-color: @gray-7;
+    padding: 18px 33px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    .border-bottom(1px, @gray-9);
+    text-transform: uppercase;
+    color: black;
+    font-size: 13px;
+    line-height: 32px;
+
+    .select-wrapper {
+      float: right;
+
+      ul {
+        font-family: 'proxima_nova_regular';
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  .table {
+    margin-bottom: 0;
+    font-size: 13px;
+    color: black;
+    border-radius: 4px;
+
+    thead {
+      tr {
+        th {
+          background-color: @gray-12;
+          padding: 20px 8px;
+
+          &:first-child {
+            padding-left: 33px;
+          }
+
+          &:last-child {
+            padding-right: 33px;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          padding: 15px 8px;
+
+          &:first-child {
+            padding-left: 33px;
+          }
+
+          &:last-child {
+            padding-right: 33px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/***************************
+****************************
+Sign Up Styles
+****************************
+***************************/
+
+#sign-up {
+  .box {
+    padding: 7px;
+  }
+}
+
+.sign-up {
+  position: relative;
+  height: 104px;
+  overflow: hidden;
+
+  > img {
+    position: absolute;
+
+    &.bg {
+      right: 0;
+      top: 0;
+    }
+
+    &.logo {
+      left: 27px;
+      top: 25px;
+    }
+  }
+
+  h4 {
+    font-family: 'proxima_nova_bold';
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    position: absolute;
+    right: 268px;
+    top: 10px;
+    line-height: 32px;
+    z-index: 10;
+  }
+
+  p {
+    font-family: 'proxima_nova_semibold';
+    font-size: 15px;
+    margin: 0;
+    color: white;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &.first {
+      top: 55px;
+      right: 259px;
+    }
+
+    &.second {
+      top: 76px;
+      right: 357px;
+    }
+  }
+
+  .bwo-btn-7 {
+    position: absolute;
+    top: 31px;
+    right: 24px;
+    z-index: 10;
+  }
+}
+
+/***************************
+****************************
+Logos Styles
+****************************
+***************************/
+
+.logos-slider {
+  .logo-slide {
+    float: left;
+    width: 20%;
+    line-height: 73px;
+    text-align: center;
+
+    > img {
+      vertical-align: middle;
+    }
+  }
+}
+
+/***************************
+****************************
+Footer Styles
+****************************
+***************************/
+
+#footer {
+  .border-top(1px, @gray-9);
+  background-color: white;
+  margin-top: 30px;
+
+  .top {
+    padding: 15px 0;
+    .border-bottom(1px, @gray-9);
+
+    .logo {
+      float: left;
+    }
+
+    .social {
+      float: right;
+
+      a {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .middle {
+    padding: 15px 0;
+    .border-bottom(1px, @gray-9);
+  }
+
+  .bottom {
+    padding: 15px 0;
+  }
+
+  p {
+    font-family: "Myriad Pro Regular", "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 10px;
+    color: @gray-13;
+    line-height: 13px;
+    margin: 0;
+
+    span {
+      text-transform: uppercase;
+    }
+
+    a {
+      color: @gray-13;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.social {
+  a {
+    display: inline-block;
+    height: 41px;
+    width: 41px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 36px;
+    color: white;
+
+    i {
+      vertical-align: middle;
+      font-size: 20px;
+    }
+
+    &.fb {
+      background-color: @facebook-color;
+
+      &:hover {
+        background-color: @facebook-color-hover;
+      }
+    }
+
+    &.tw {
+      background-color: @twitter-color;
+
+      &:hover {
+        background-color: @twitter-color-hover;
+      }
+    }
+
+    &.gp {
+      background-color: @google-color;
+
+      &:hover {
+        background-color: @google-color-hover;
+      }
+    }
+  }
+}

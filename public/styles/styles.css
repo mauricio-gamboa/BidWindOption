@@ -14,6 +14,14 @@ Responsive
 .show-xl {
   display: none;
 }
+@media (min-width: 1200px) {
+  .hide-xl {
+    display: none !important;
+  }
+  .show-xl {
+    display: block;
+  }
+}
 @media (min-width: 993px) and (max-width: 1200px) {
   .hide-m {
     display: none !important;
@@ -126,6 +134,11 @@ Buttons and Links
   line-height: 40px;
   padding: 0 18px;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .btn.bwo-btn.bwo-btn-3 {
+    padding: 0 10px;
+  }
+}
 .btn.bwo-btn.bwo-btn-4 {
   font-family: 'proxima_nova_bold';
   font-size: 18px;
@@ -227,8 +240,14 @@ Navigation Styles
 ***************************/
 .nav-settings {
   padding: 0 15px;
-  height: 64px;
-  line-height: 64px;
+  height: 63px;
+  line-height: 63px;
+}
+@media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+  .nav-settings {
+    height: 64px;
+    line-height: 64px;
+  }
 }
 #nav {
   font-family: 'proxima_nova_bold';
@@ -237,13 +256,25 @@ Navigation Styles
   height: 64px;
   font-size: 13px;
 }
+@media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+  #nav {
+    background: url("../images/bg-nav-mobile.png") no-repeat 50% 0;
+    border-bottom: none;
+  }
+}
 #nav .logo {
   padding: 0 15px;
-  height: 64px;
-  line-height: 64px;
+  height: 63px;
+  line-height: 63px;
   padding: 0;
   float: left;
   margin-right: 15px;
+}
+@media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+  #nav .logo {
+    height: 64px;
+    line-height: 64px;
+  }
 }
 #nav .logo a {
   margin-top: 4px;
@@ -253,11 +284,23 @@ Navigation Styles
   border-right: 1px solid #c4c4c4;
   float: left;
 }
+@media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+  #nav .main-nav {
+    display: none;
+  }
+}
 #nav .lang-selector {
+  background: url("../images/bg-nav.png") repeat-x 0 0;
   padding: 0 15px;
-  height: 64px;
-  line-height: 64px;
+  height: 63px;
+  line-height: 63px;
   float: right;
+}
+@media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+  #nav .lang-selector {
+    height: 64px;
+    line-height: 64px;
+  }
 }
 #nav .lang-selector ul li a {
   text-transform: capitalize;
@@ -268,16 +311,47 @@ Navigation Styles
   }
 }
 #nav .user-options {
+  background: url("../images/bg-nav.png") repeat-x 0 0;
   border-left: 1px solid #c4c4c4;
   padding: 0 15px;
-  height: 64px;
-  line-height: 64px;
+  height: 63px;
+  line-height: 63px;
   float: right;
+}
+@media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+  #nav .user-options {
+    height: 64px;
+    line-height: 64px;
+  }
 }
 #nav .dropdown-menu {
   font-family: 'proxima_nova_regular';
   left: auto;
   right: 0;
+}
+#nav .nav-toggler {
+  padding: 0 15px;
+  height: 63px;
+  line-height: 63px;
+  float: right;
+  text-align: right;
+  padding: 0 20px;
+}
+@media (min-width: 1200px), (min-width: 993px) and (max-width: 1200px) {
+  #nav .nav-toggler {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px), (max-width: 767px) {
+  #nav .nav-toggler {
+    height: 64px;
+    line-height: 64px;
+  }
+}
+.nav-toggler {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
 }
 .lang-selector {
   position: relative;
@@ -341,6 +415,23 @@ Navigation Styles
   color: white;
   background: url("../images/bg-nav-active.png") repeat-x 0 0;
 }
+#main-nav-mobile ul {
+  margin: 0;
+  background-color: #f36822;
+}
+#main-nav-mobile ul li:last-child {
+  border-bottom: none;
+}
+#main-nav-mobile ul li a {
+  color: white;
+  display: block;
+  padding: 0 33px;
+  line-height: 40px;
+}
+#main-nav-mobile ul li a:hover {
+  background-color: white;
+  color: #f36822;
+}
 /***************************
 ****************************
 Top Controls Styles
@@ -364,14 +455,46 @@ Top Controls Styles
   min-height: 34px;
   padding-left: 0;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  #top-controls .type-selector {
+    border-bottom: 1px solid #c4c4c4;
+    background: none;
+    float: none;
+    padding: 0 0 11px 0;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
 #top-controls .top-data {
   background: url("../images/sep-2.png") no-repeat 100% 50%;
   padding: 0 27px;
   float: left;
   min-height: 34px;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  #top-controls .top-data {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #top-controls .top-data + .top-data {
+    padding-left: 30px;
+  }
+}
 #top-controls .view-selector {
   float: right;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #top-controls .view-selector {
+    text-align: right;
+    padding: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #top-controls .top-data,
+  #top-controls .view-selector {
+    width: 33.33%;
+  }
 }
 .type-selector {
   margin: 0;
@@ -463,6 +586,19 @@ Graph Styles
   color: black;
   margin-right: 15px;
 }
+.steps .step > span.double-line {
+  line-height: 20px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .steps .step > span.double-line {
+    float: left;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .steps .step > span {
+    margin-right: 10px;
+  }
+}
 .steps .step .select-wrapper {
   display: inline-block;
 }
@@ -491,6 +627,12 @@ Graph Styles
   float: left;
   width: 75%;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .graph-wrapper {
+    float: none;
+    width: 100%;
+  }
+}
 .graph-wrapper h5 {
   font-family: 'proxima_nova_bold';
   margin: 0 0 20px 0;
@@ -518,6 +660,11 @@ Graph Styles
 .graph-wrapper .graph > * {
   float: left;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .graph-wrapper .graph > img {
+    width: 427px;
+  }
+}
 @media (min-width: 993px) and (max-width: 1200px) {
   .graph-wrapper .graph > img {
     width: 412px;
@@ -526,7 +673,7 @@ Graph Styles
 .graph-wrapper .graph .graph-meta-data {
   margin-left: 9px;
 }
-@media (min-width: 993px) and (max-width: 1200px) {
+@media (min-width: 993px) and (max-width: 1200px), (min-width: 768px) and (max-width: 992px) {
   .graph-wrapper .graph .graph-meta-data {
     float: right;
   }
@@ -595,10 +742,23 @@ Graph Styles
   height: 321px;
   border-bottom-right-radius: 5px;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .graph-sidebar {
+    border-left: none;
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+}
 .graph-sidebar > div {
   padding: 26px 24px;
   color: black;
   border-bottom: 1px solid #e0e0e0;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .graph-sidebar > div {
+    border-bottom: none;
+  }
 }
 .graph-sidebar > div:last-child {
   border-bottom: none;
@@ -617,6 +777,13 @@ Graph Styles
   font-size: 22px;
   font-weight: normal;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .graph-sidebar .top {
+    float: left;
+    width: 475px;
+    border-right: 1px solid #e0e0e0;
+  }
+}
 .graph-sidebar .top h5 {
   font-weight: normal;
   margin: 0 0 5px 0;
@@ -625,9 +792,20 @@ Graph Styles
   padding-left: 39px;
   line-height: 24px;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .graph-sidebar .top h5 {
+    float: left;
+  }
+}
 .graph-sidebar .top ul {
   margin: 0;
   padding-left: 39px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .graph-sidebar .top ul {
+    float: left;
+    padding-left: 0;
+  }
 }
 .graph-sidebar .top ul li {
   border-bottom: 1px solid #e0e0e0;
@@ -642,8 +820,28 @@ Graph Styles
   border-bottom: none;
   padding-bottom: 0;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .graph-sidebar .top ul li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-left: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .graph-sidebar .bottom {
+    float: right;
+    width: 245px;
+  }
+}
 .graph-sidebar .bottom p {
   margin-bottom: 25px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .graph-sidebar .bottom p {
+    margin-bottom: 10px;
+  }
 }
 .graph-sidebar .bottom p span {
   float: right;

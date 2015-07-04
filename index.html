@@ -21,6 +21,9 @@
           <li><a href="">Dashboard</a></li>
           <li><a href="">Trade History</a></li>
         </ul>
+        <div class="nav-toggler collapsed" data-toggle="collapse" data-target="#main-nav-mobile">
+          <span><i class="fa fa-bars"></i></span>
+        </div>
         <div class="user-options">
           <img class="user" src="public/images/user.png" alt=""/>
           <button type="button" class="btn bwo-btn bwo-btn-empty dropdown-toggle" data-toggle="dropdown"
@@ -44,6 +47,19 @@
             <li><a href="#">Spanish</a></li>
           </ul>
         </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<nav id="main-nav-mobile" class="list-unstyled collapse">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <ul class="list-unstyled">
+          <li class="active"><a href="">Home page</a></li>
+          <li><a href="">Dashboard</a></li>
+          <li><a href="">Trade History</a></li>
+        </ul>
       </div>
     </div>
   </div>
@@ -101,7 +117,8 @@
               </div>
             </div>
             <div class="step">
-              <span>Investment Amount:</span>
+              <span class="hide-s">Investment Amount:</span>
+              <span class="double-line show-s hide-m hide-xl">Investment <br/>Amount:</span>
 
               <div class="select-wrapper">
 
@@ -148,21 +165,22 @@
                 </div>
               </div>
             </div>
-            <div class="graph-sidebar">
-              <div class="top">
+            <div class="graph-sidebar clearfix">
+              <div class="top clearfix">
                 <h5>Potential Payout</h5>
-                <ul class="list-unstyled">
-                  <li>
-                    <p><span>Call</span></p>
+                <ul class="list-unstyled clearfix">
+                  <ul class="list-unstyled clearfix">
+                    <li>
+                      <p><span>Call</span></p>
 
-                    <p><strong>$45.50</strong></p>
-                  </li>
-                  <li>
-                    <p><span>PUT</span></p>
+                      <p><strong>$45.50</strong></p>
+                    </li>
+                    <li>
+                      <p><span>PUT</span></p>
 
-                    <p><strong>$45.50</strong></p>
-                  </li>
-                </ul>
+                      <p><strong>$45.50</strong></p>
+                    </li>
+                  </ul>
               </div>
               <div class="bottom">
                 <p class="clearfix">Time Left <span>00:00:30</span></p>
@@ -217,6 +235,39 @@
               </tr>
               </thead>
               <tbody>
+              <tr>
+                <td>223</td>
+                <td>eur/usd</td>
+                <td>85</td>
+                <td>85</td>
+                <td>High Low</td>
+                <td>Up</td>
+                <td>1,1240<sup>2</sup></td>
+                <td>1,1240<sup>2</sup></td>
+                <td>Gain</td>
+              </tr>
+              <tr>
+                <td>223</td>
+                <td>eur/usd</td>
+                <td>85</td>
+                <td>85</td>
+                <td>High Low</td>
+                <td>Up</td>
+                <td>1,1240<sup>2</sup></td>
+                <td>1,1240<sup>2</sup></td>
+                <td>Gain</td>
+              </tr>
+              <tr>
+                <td>223</td>
+                <td>eur/usd</td>
+                <td>85</td>
+                <td>85</td>
+                <td>High Low</td>
+                <td>Up</td>
+                <td>1,1240<sup>2</sup></td>
+                <td>1,1240<sup>2</sup></td>
+                <td>Gain</td>
+              </tr>
               <tr>
                 <td>223</td>
                 <td>eur/usd</td>
@@ -321,7 +372,8 @@
             regulated by the Australian Securities and Investments Commission ("ASIC")</p>
         </div>
         <div class="bottom">
-          <p><span>General risk warning:</span> trading in binary options carries a high level of risk and can result in the loss of
+          <p><span>General risk warning:</span> trading in binary options carries a high level of risk and can result in
+            the loss of
             all of your investment. As such, binary options may not be appropriate for all investors. You should not
             invest money that you cannot afford to lose. Before deciding to trade, you should become aware of all the
             risks associated with binary options trading, and seek advice from an independent and suitably licensed

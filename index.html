@@ -13,39 +13,41 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <h1 class="logo">
-          <a href="">BidWin Option</a>
-        </h1>
-        <ul class="list-unstyled main-nav clearfix">
-          <li class="active"><a href="">Home page</a></li>
-          <li><a href="">Dashboard</a></li>
-          <li><a href="">Trade History</a></li>
-        </ul>
-        <div class="nav-toggler collapsed" data-toggle="collapse" data-target="#main-nav-mobile">
-          <span><i class="fa fa-bars"></i></span>
-        </div>
-        <div class="user-options">
-          <img class="user" src="public/images/user.png" alt=""/>
-          <button type="button" class="btn bwo-btn bwo-btn-empty dropdown-toggle" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-            Karina Romaine <i class="fa fa-chevron-down"></i>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Option</a></li>
-            <li><a href="#">Option</a></li>
-            <li><a href="#">Option</a></li>
-            <li><a href="#">Option</a></li>
+        <div class="nav-wrapper clearfix">
+          <h1 class="logo">
+            <a href="">BidWin Option</a>
+          </h1>
+          <ul class="list-unstyled main-nav clearfix">
+            <li class="active"><a href="">Home page</a></li>
+            <li><a href="">Dashboard</a></li>
+            <li><a href="">Trade History</a></li>
           </ul>
-        </div>
-        <div class="lang-selector">
-          <button type="button" class="btn bwo-btn bwo-btn-empty dropdown-toggle" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-            <span>Language</span><span>ENG</span> <i class="fa fa-chevron-down"></i>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="#">English</a></li>
-            <li><a href="#">Spanish</a></li>
-          </ul>
+          <div class="nav-toggler collapsed" data-toggle="collapse" data-target="#main-nav-mobile">
+            <span><i class="fa fa-bars"></i></span>
+          </div>
+          <div class="user-options">
+            <img class="user" src="public/images/user.png" alt=""/>
+            <button type="button" class="btn bwo-btn bwo-btn-empty dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+              Karina Romaine <i class="fa fa-chevron-down"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Option</a></li>
+              <li><a href="#">Option</a></li>
+              <li><a href="#">Option</a></li>
+              <li><a href="#">Option</a></li>
+            </ul>
+          </div>
+          <div class="lang-selector">
+            <button type="button" class="btn bwo-btn bwo-btn-empty dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+              <span>Language</span><span>ENG</span> <i class="fa fa-chevron-down"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">English</a></li>
+              <li><a href="#">Spanish</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -75,10 +77,12 @@
         </ul>
         <div class="top-data">
           <p>Balance</p>
+          <br class="show-xs"/>
           <span class="badge">USD</span> <strong>$1,000,745.05</strong>
         </div>
         <div class="top-data">
           <p>Maximum Withdrawal Amount</p>
+          <br class="show-xs"/>
           <span class="badge">USD</span> <strong>$1,000,745.05</strong>
         </div>
         <div class="view-selector">
@@ -118,7 +122,7 @@
             </div>
             <div class="step">
               <span class="hide-s">Investment Amount:</span>
-              <span class="double-line show-s hide-m hide-xl">Investment <br/>Amount:</span>
+              <span class="double-line show-s hide-m hide-xl hide-xs">Investment <br/>Amount:</span>
 
               <div class="select-wrapper">
 
@@ -134,7 +138,7 @@
                 </ul>
               </div>
             </div>
-            <div class="step clock">
+            <div class="step clock hide-xs">
               <div>
                 <span>Time Remaining</span>
                 <strong>00:00:30</strong>
@@ -169,18 +173,17 @@
               <div class="top clearfix">
                 <h5>Potential Payout</h5>
                 <ul class="list-unstyled clearfix">
-                  <ul class="list-unstyled clearfix">
-                    <li>
-                      <p><span>Call</span></p>
+                  <li>
+                    <p><span>Call</span></p>
 
-                      <p><strong>$45.50</strong></p>
-                    </li>
-                    <li>
-                      <p><span>PUT</span></p>
+                    <p><strong>$45.50</strong></p>
+                  </li>
+                  <li>
+                    <p><span>PUT</span></p>
 
-                      <p><strong>$45.50</strong></p>
-                    </li>
-                  </ul>
+                    <p><strong>$45.50</strong></p>
+                  </li>
+                </ul>
               </div>
               <div class="bottom">
                 <p class="clearfix">Time Left <span>00:00:30</span></p>
@@ -220,89 +223,80 @@
               </div>
               Active Order
             </div>
-            <table class="table">
-              <thead>
-              <tr>
-                <th>Ticket ID</th>
-                <th>Asset</th>
-                <th>Investment $</th>
-                <th>Payout %</th>
-                <th>Trade</th>
-                <th>Trend</th>
-                <th>Strike Price</th>
-                <th>Current Price</th>
-                <th>Status</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td>223</td>
-                <td>eur/usd</td>
-                <td>85</td>
-                <td>85</td>
-                <td>High Low</td>
-                <td>Up</td>
-                <td>1,1240<sup>2</sup></td>
-                <td>1,1240<sup>2</sup></td>
-                <td>Gain</td>
-              </tr>
-              <tr>
-                <td>223</td>
-                <td>eur/usd</td>
-                <td>85</td>
-                <td>85</td>
-                <td>High Low</td>
-                <td>Up</td>
-                <td>1,1240<sup>2</sup></td>
-                <td>1,1240<sup>2</sup></td>
-                <td>Gain</td>
-              </tr>
-              <tr>
-                <td>223</td>
-                <td>eur/usd</td>
-                <td>85</td>
-                <td>85</td>
-                <td>High Low</td>
-                <td>Up</td>
-                <td>1,1240<sup>2</sup></td>
-                <td>1,1240<sup>2</sup></td>
-                <td>Gain</td>
-              </tr>
-              <tr>
-                <td>223</td>
-                <td>eur/usd</td>
-                <td>85</td>
-                <td>85</td>
-                <td>High Low</td>
-                <td>Up</td>
-                <td>1,1240<sup>2</sup></td>
-                <td>1,1240<sup>2</sup></td>
-                <td>Gain</td>
-              </tr>
-              <tr>
-                <td>223</td>
-                <td>eur/usd</td>
-                <td>85</td>
-                <td>85</td>
-                <td>High Low</td>
-                <td>Up</td>
-                <td>1,1240<sup>2</sup></td>
-                <td>1,1240<sup>2</sup></td>
-                <td>Gain</td>
-              </tr>
-              <tr>
-                <td>223</td>
-                <td>eur/usd</td>
-                <td>85</td>
-                <td>85</td>
-                <td>High Low</td>
-                <td>Up</td>
-                <td>1,1240<sup>2</sup></td>
-                <td>1,1240<sup>2</sup></td>
-                <td>Gain</td>
-              </tr>
-              </tbody>
-            </table>
+            <div class="table-wrapper">
+              <table class="table">
+                <thead>
+                <tr>
+                  <th>Ticket ID</th>
+                  <th class="hide-xs">Asset</th>
+                  <th class="hide-xs">Investment $</th>
+                  <th class="hide-xs">Payout %</th>
+                  <th class="hide-xs">Trade</th>
+                  <th class="hide-xs">Trend</th>
+                  <th>Strike Price</th>
+                  <th class="hide-xs">Current Price</th>
+                  <th>Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>223</td>
+                  <td class="hide-xs">eur/usd</td>
+                  <td class="hide-xs">85</td>
+                  <td class="hide-xs">85</td>
+                  <td class="hide-xs">High Low</td>
+                  <td class="hide-xs">Up</td>
+                  <td>1,1240<sup>2</sup></td>
+                  <td class="hide-xs">1,1240<sup>2</sup></td>
+                  <td>Gain</td>
+                </tr>
+                <tr>
+                  <td>223</td>
+                  <td class="hide-xs">eur/usd</td>
+                  <td class="hide-xs">85</td>
+                  <td class="hide-xs">85</td>
+                  <td class="hide-xs">High Low</td>
+                  <td class="hide-xs">Up</td>
+                  <td>1,1240<sup>2</sup></td>
+                  <td class="hide-xs">1,1240<sup>2</sup></td>
+                  <td>Gain</td>
+                </tr>
+                <tr>
+                  <td>223</td>
+                  <td class="hide-xs">eur/usd</td>
+                  <td class="hide-xs">85</td>
+                  <td class="hide-xs">85</td>
+                  <td class="hide-xs">High Low</td>
+                  <td class="hide-xs">Up</td>
+                  <td>1,1240<sup>2</sup></td>
+                  <td class="hide-xs">1,1240<sup>2</sup></td>
+                  <td>Gain</td>
+                </tr>
+                <tr>
+                  <td>223</td>
+                  <td class="hide-xs">eur/usd</td>
+                  <td class="hide-xs">85</td>
+                  <td class="hide-xs">85</td>
+                  <td class="hide-xs">High Low</td>
+                  <td class="hide-xs">Up</td>
+                  <td>1,1240<sup>2</sup></td>
+                  <td class="hide-xs">1,1240<sup>2</sup></td>
+                  <td>Gain</td>
+                </tr>
+                <tr>
+                  <td>223</td>
+                  <td class="hide-xs">eur/usd</td>
+                  <td class="hide-xs">85</td>
+                  <td class="hide-xs">85</td>
+                  <td class="hide-xs">High Low</td>
+                  <td class="hide-xs">Up</td>
+                  <td>1,1240<sup>2</sup></td>
+                  <td class="hide-xs">1,1240<sup>2</sup></td>
+                  <td>Gain</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -323,6 +317,7 @@
             <a href="" class="btn bwo-btn bwo-btn-7">Sign Up Now</a>
             <img class="bg hide-s" src="public/images/bg-sign-up.png" alt=""/>
             <img class="bg show-s" src="public/images/bg-sign-up-small.png" alt=""/>
+            <img class="bg show-xs" src="public/images/bg-sign-up-xs.png" alt=""/>
             <img src="public/images/logo-white.png" alt="" class="logo"/>
           </div>
         </div>

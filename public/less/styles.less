@@ -206,9 +206,18 @@ Buttons and Links
       height: 40px;
       line-height: 40px;
       padding: 0 18px;
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 1;
+      }
 
       @media @small {
         padding: 0 10px;
+      }
+
+      @media @xs {
+        font-size: 15px;
       }
     }
 
@@ -225,6 +234,15 @@ Buttons and Links
       text-transform: uppercase;
       text-align: left;
       position: relative;
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      @media @xs {
+        width: 200px;
+      }
 
       i {
         font-size: 30px;
@@ -259,6 +277,10 @@ Buttons and Links
       padding: 0 24px;
       text-align: left;
       font-size: 28px;
+
+      @media @xs {
+        width: 200px;
+      }
     }
 
     &.bwo-btn-6 {
@@ -270,6 +292,11 @@ Buttons and Links
       height: 32px;
       line-height: 32px;
       padding: 0 18px;
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 1;
+      }
     }
 
     &.bwo-btn-7 {
@@ -283,6 +310,11 @@ Buttons and Links
       padding: 0;
       text-align: center;
       text-transform: uppercase;
+      opacity: 0.9;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }
@@ -315,6 +347,12 @@ a {
     height: 55px;
     width: 245px;
     text-indent: -9999px;
+
+    @media @xs {
+      width: 239px;
+      background-size: 239px auto;
+      height: auto;
+    }
   }
 
   &.logo-small {
@@ -379,6 +417,12 @@ Navigation Styles
     border-bottom: none;
   }
 
+  .nav-wrapper {
+    @media @xs {
+      background: url("../images/bg-nav.png") repeat-x 0 0;
+    }
+  }
+
   .logo {
     .nav-settings;
     padding: 0;
@@ -387,6 +431,10 @@ Navigation Styles
 
     a {
       margin-top: 4px;
+
+      @media @xs {
+        margin-top: 0;
+      }
     }
   }
 
@@ -403,6 +451,14 @@ Navigation Styles
   .lang-selector {
     background: url("../images/bg-nav.png") repeat-x 0 0;
 
+    @media @medium {
+      padding-left: 0;
+    }
+
+    @media @xs {
+      display: none;
+    }
+
     .nav-settings;
     float: right;
 
@@ -413,10 +469,6 @@ Navigation Styles
         }
       }
     }
-
-    @media @medium {
-      padding-left: 0;
-    }
   }
 
   .user-options {
@@ -424,6 +476,10 @@ Navigation Styles
     .border-left(1px, @gray-1);
     .nav-settings;
     float: right;
+
+    @media @xs {
+      display: none;
+    }
   }
 
   .dropdown-menu {
@@ -435,6 +491,11 @@ Navigation Styles
   .nav-toggler {
     @media @large, @medium {
       display: none;
+    }
+
+    @media @xs {
+      background: url("../images/bg-nav-mobile.png") no-repeat 100% 0;
+      padding-right: 5px;
     }
 
     .nav-settings;
@@ -531,6 +592,10 @@ Navigation Styles
     margin: 0;
     background-color: @orange-1;
 
+    @media @xs {
+      margin: 0 -15px;
+    }
+
     li {
       &:last-child {
         border-bottom: none;
@@ -573,13 +638,24 @@ Top Controls Styles
     .top-controls-settings;
     padding-left: 0;
 
-    @media @small {
+    @media @xs {
+      text-align: center;
+    }
+
+    @media @small, @xs {
       .border-bottom(1px, @gray-1);
       background: none;
       float: none;
       padding: 0 0 11px 0;
       width: 100%;
       margin-bottom: 15px;
+    }
+
+    li {
+      @media @xs {
+        display: inline-block;
+        float: none;
+      }
     }
   }
 
@@ -594,11 +670,20 @@ Top Controls Styles
       @media @small {
         padding-left: 30px;
       }
+
+      @media @xs {
+        padding-left: 15px;
+        background: url("../images/sep-3.png") no-repeat 0 50%;
+      }
     }
   }
 
   .view-selector {
     float: right;
+
+    @media @xs {
+      display: none;
+    }
 
     @media @small {
       text-align: right;
@@ -609,6 +694,20 @@ Top Controls Styles
   .top-data, .view-selector {
     @media @small {
       width: 33.33%;
+    }
+
+    @media @xs {
+      width: 50%;
+      padding: 0;
+      background: none;
+    }
+
+    strong {
+      @media @xs {
+        display: inline;
+        float: none;
+        font-size: 14px;
+      }
     }
   }
 }
@@ -705,12 +804,29 @@ Graph Styles
   border-top-right-radius: 5px;
   .border-bottom(1px, @gray-9);
 
+  @media @xs {
+    background: url("../images/bg-steps-mobile.png") repeat-x 0 0;
+  }
+
   .step {
     background: url("../images/arrow-1.png") no-repeat 100% 0;
     float: left;
     padding: 16px 33px;
     width: 33.33%;
     height: 74px;
+
+    @media @xs {
+      background: none;
+      height: 88px;
+      padding: 13px 16px;
+      width: 50%;
+    }
+
+    &:first-child {
+      @media @xs {
+        .border-right(1px, @gray-9);
+      }
+    }
 
     &:last-child {
       background: none;
@@ -730,6 +846,13 @@ Graph Styles
         @media @small {
           float: left;
         }
+      }
+
+      @media @xs {
+        display: block;
+        margin: 0;
+        line-height: normal;
+        font-size: 13px;
       }
 
       @media @small {
@@ -773,7 +896,7 @@ Graph Styles
   float: left;
   width: 75%;
 
-  @media @small {
+  @media @small, @xs {
     float: none;
     width: 100%;
   }
@@ -789,9 +912,25 @@ Graph Styles
     font-weight: normal;
     line-height: 29px;
 
+    @media @xs {
+      line-height: normal;
+      position: relative;
+      padding-left: 49px;
+      font-size: 14px;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
     > img {
       vertical-align: middle;
       margin-right: 11px;
+
+      @media @xs {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -12px;
+      }
     }
 
     .badge {
@@ -802,6 +941,10 @@ Graph Styles
       color: black;
       font-size: 15px;
       font-weight: normal;
+
+      @media @xs {
+        line-height: normal;
+      }
     }
   }
 
@@ -811,6 +954,11 @@ Graph Styles
     }
 
     > img {
+      @media @xs {
+        float: none;
+        max-width: 100%;
+      }
+
       @media @small {
         width: 427px;
       }
@@ -822,6 +970,13 @@ Graph Styles
 
     .graph-meta-data {
       margin-left: 9px;
+
+      @media @xs {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+      }
 
       @media @medium, @small {
         float: right;
@@ -908,7 +1063,7 @@ Graph Styles
   height: 321px;
   border-bottom-right-radius: 5px;
 
-  @media @small {
+  @media @small, @xs {
     .border-top(1px, @gray-9);
     border-left: none;
     border-bottom-left-radius: 5px;
@@ -974,6 +1129,10 @@ Graph Styles
       margin: 0;
       padding-left: 39px;
 
+      @media @xs {
+        padding: 0;
+      }
+
       @media @small {
         float: left;
         padding-left: 0;
@@ -1001,6 +1160,22 @@ Graph Styles
           border: none;
           margin-left: 30px;
         }
+
+        @media @xs {
+          border: none;
+          float: left;
+          width: 50%;
+          margin: 0;
+          padding: 10px 0;
+
+          &:first-child {
+            .border-right(1px, @gray-9);
+          }
+
+          &:last-child {
+            padding: 10px 0 10px 44px;
+          }
+        }
       }
     }
   }
@@ -1014,7 +1189,7 @@ Graph Styles
     p {
       margin-bottom: 25px;
 
-      @media @small {
+      @media @small, @xs {
         margin-bottom: 10px;
       }
 
@@ -1054,40 +1229,45 @@ Table Styles
     }
   }
 
-  .table {
-    margin-bottom: 0;
-    font-size: 13px;
-    color: black;
-    border-radius: 4px;
+  .table-wrapper {
+    overflow-y: scroll;
+    height: 208px;
 
-    thead {
-      tr {
-        th {
-          background-color: @gray-12;
-          padding: 20px 8px;
+    .table {
+      margin-bottom: 0;
+      font-size: 13px;
+      color: black;
+      border-radius: 4px;
 
-          &:first-child {
-            padding-left: 33px;
-          }
+      thead {
+        tr {
+          th {
+            background-color: @gray-12;
+            padding: 20px 8px;
 
-          &:last-child {
-            padding-right: 33px;
+            &:first-child {
+              padding-left: 33px;
+            }
+
+            &:last-child {
+              padding-right: 33px;
+            }
           }
         }
       }
-    }
 
-    tbody {
-      tr {
-        td {
-          padding: 15px 8px;
+      tbody {
+        tr {
+          td {
+            padding: 15px 8px;
 
-          &:first-child {
-            padding-left: 33px;
-          }
+            &:first-child {
+              padding-left: 33px;
+            }
 
-          &:last-child {
-            padding-right: 33px;
+            &:last-child {
+              padding-right: 33px;
+            }
           }
         }
       }
@@ -1112,6 +1292,10 @@ Sign Up Styles
   height: 104px;
   overflow: hidden;
 
+  @media @xs {
+    height: 239px;
+  }
+
   @media @small {
     height: 133px;
   }
@@ -1127,6 +1311,13 @@ Sign Up Styles
     &.logo {
       left: 27px;
       top: 25px;
+
+      @media @xs {
+        top: 9px;
+        left: 50%;
+        margin-left: -122px;
+        line-height: 74px;
+      }
 
       @media @small {
         top: 9px;
@@ -1146,6 +1337,12 @@ Sign Up Styles
     line-height: 32px;
     z-index: 10;
 
+    @media @xs {
+      font-size: 16px;
+      right: 4px;
+      top: 74px;
+    }
+
     @media @small {
       top: 23px;
       right: 50px;
@@ -1162,9 +1359,20 @@ Sign Up Styles
     top: 0;
     right: 0;
 
+    @media @xs {
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+    }
+
     &.first {
       top: 55px;
       right: 259px;
+
+      @media @xs {
+        right: 0;
+        top: 115px;
+      }
 
       @media @small {
         top: 85px;
@@ -1176,6 +1384,11 @@ Sign Up Styles
     &.second {
       top: 76px;
       right: 357px;
+
+      @media @xs {
+        right: 0;
+        top: 140px;
+      }
 
       @media @small {
         top: 105px;
@@ -1191,7 +1404,7 @@ Sign Up Styles
     right: 24px;
     z-index: 10;
 
-    @media @small {
+    @media @small, @xs {
       bottom: 8px;
       right: 20px;
       top: auto;
@@ -1233,10 +1446,25 @@ Footer Styles
 
     .logo {
       float: left;
+
+      @media @xs {
+        float: none;
+        width: 100%;
+        text-align: center;
+        .border-bottom(1px, @gray-9);
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+      }
     }
 
     .social {
       float: right;
+
+      @media @xs {
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
 
       a {
         margin-left: 10px;
@@ -1247,10 +1475,18 @@ Footer Styles
   .middle {
     padding: 15px 0;
     .border-bottom(1px, @gray-9);
+
+    @media @xs {
+      text-align: center;
+    }
   }
 
   .bottom {
     padding: 15px 0;
+
+    @media @xs {
+      text-align: center;
+    }
   }
 
   p {

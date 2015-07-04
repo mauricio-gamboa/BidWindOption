@@ -703,7 +703,7 @@ Graph Styles
   background-color: @gray-7;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  .border(1px, @gray-9);
+  .border-bottom(1px, @gray-9);
 
   .step {
     background: url("../images/arrow-1.png") no-repeat 100% 0;
@@ -909,7 +909,9 @@ Graph Styles
   border-bottom-right-radius: 5px;
 
   @media @small {
+    .border-top(1px, @gray-9);
     border-left: none;
+    border-bottom-left-radius: 5px;
     float: none;
     width: 100%;
     height: auto;
@@ -1110,6 +1112,10 @@ Sign Up Styles
   height: 104px;
   overflow: hidden;
 
+  @media @small {
+    height: 133px;
+  }
+
   > img {
     position: absolute;
 
@@ -1121,6 +1127,11 @@ Sign Up Styles
     &.logo {
       left: 27px;
       top: 25px;
+
+      @media @small {
+        top: 9px;
+        left: 27px;
+      }
     }
   }
 
@@ -1134,6 +1145,11 @@ Sign Up Styles
     top: 10px;
     line-height: 32px;
     z-index: 10;
+
+    @media @small {
+      top: 23px;
+      right: 50px;
+    }
   }
 
   p {
@@ -1149,11 +1165,23 @@ Sign Up Styles
     &.first {
       top: 55px;
       right: 259px;
+
+      @media @small {
+        top: 85px;
+        left: 30px;
+        right: auto;
+      }
     }
 
     &.second {
       top: 76px;
       right: 357px;
+
+      @media @small {
+        top: 105px;
+        left: 30px;
+        right: auto;
+      }
     }
   }
 
@@ -1162,6 +1190,12 @@ Sign Up Styles
     top: 31px;
     right: 24px;
     z-index: 10;
+
+    @media @small {
+      bottom: 8px;
+      right: 20px;
+      top: auto;
+    }
   }
 }
 
@@ -1173,8 +1207,6 @@ Logos Styles
 
 .logos-slider {
   .logo-slide {
-    float: left;
-    width: 20%;
     line-height: 73px;
     text-align: center;
 

@@ -819,7 +819,7 @@ Graph Styles
 @media (max-width: 767px) {
   .graph-wrapper .graph > img {
     float: none;
-    max-width: 100%;
+    width: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {

@@ -1058,6 +1058,7 @@ Graph Styles
         width: 100%;
         margin-left: 0;
         margin-top: 20px;
+        position: relative;
       }
 
       @media @medium, @small {
@@ -1071,8 +1072,24 @@ Graph Styles
       .meta-buttons {
         margin-left: 19px;
 
+        @media @xs {
+          width: 100%;
+          padding-left: 39px;
+          margin: 0;
+        }
+
         > * {
           display: block;
+
+          @media @large {
+            text-align: center;
+            width: 311px;
+          }
+
+          @media @xs {
+            text-align: center;
+            width: 100%;
+          }
         }
 
         .bwo-btn-5 {
@@ -1101,6 +1118,12 @@ Graph Styles
 
 .slider-wrapper-vertical {
   position: relative;
+
+  @media @xs {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 
   div {
     height: 228px;
